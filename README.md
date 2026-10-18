@@ -1,0 +1,36 @@
+# Shorts Blocker for YouTube
+
+A tiny Chrome extension that hides YouTube Shorts on the web. The YouTube mobile app lets you turn Shorts down, but the website doesn't.
+
+- Hides the Shorts entry in the sidebar and the Shorts tab on channel pages
+- Hides the Shorts shelves on home, search, subscriptions and watch pages
+- Hides single Shorts mixed in with regular videos
+- Opens `/shorts/<id>` links in the normal video player
+
+Each option can be turned on or off from the toolbar popup. It works on `www.youtube.com` and `m.youtube.com`.
+
+The extension has no build step and no dependencies. It only asks for the `storage` permission (to save your settings) and access to YouTube pages.
+
+## Install from source
+
+1. Clone this repo.
+2. Open `chrome://extensions` and turn on **Developer mode**.
+3. Click **Load unpacked** and pick the repo folder.
+
+## How it works
+
+`content.css` hides Shorts with `:has()` selectors. Each group of rules only applies when a matching `data-sb-*` attribute is set on `<html>`. `content.js` sets those attributes from your settings and changes `/shorts/` URLs into `/watch?v=` URLs, including when you move between pages inside YouTube.
+
+When YouTube changes its markup, the fix is usually one selector in `content.css`.
+
+## Packaging for the Chrome Web Store
+
+```sh
+./pack.sh   # writes dist/shorts-blocker-<version>.zip
+```
+
+Upload that zip in the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole). For the privacy section, the extension collects no data. See [PRIVACY.md](PRIVACY.md).
+
+## License
+
+MIT
