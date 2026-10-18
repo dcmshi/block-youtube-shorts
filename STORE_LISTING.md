@@ -37,7 +37,7 @@ Not affiliated with or endorsed by YouTube or Google.
 
 | Field | File |
 | --- | --- |
-| Store icon (128×128) | `icons/icon128.png` |
+| Store icon (128×128, 96×96 artwork + 16px transparent padding) | `store/store-icon-128.png` |
 | Screenshot 1 (1280×800) | `store/screenshot-1-before-after.png` |
 | Screenshot 2 (1280×800) | `store/screenshot-2-settings.png` |
 | Small promo tile (440×280) | `store/promo-small-440x280.png` |
