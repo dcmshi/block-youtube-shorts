@@ -76,3 +76,7 @@ The content script must run on YouTube pages to hide Shorts and Playables elemen
 ## Distribution tab
 
 **Visibility:** Public. **Regions:** All regions. **Pricing:** Free.
+
+## Firefox Add-ons (addons.mozilla.org)
+
+Upload the same zip. The add-on ID (`shorts-blocker@dcmshi`) and the "no data collected" declaration are already in `manifest.json` under `browser_specific_settings`. Reuse the description above. Under compatibility, tick both **Firefox** and **Firefox for Android**.
