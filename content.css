@@ -32,3 +32,14 @@ html[data-sb-feed] ytm-shorts-lockup-view-model,
 html[data-sb-feed] ytm-shorts-lockup-view-model-v2 {
   display: none !important;
 }
+
+/* Playables (YouTube's in-browser games): sidebar entry, home shelf and single game cards */
+html[data-sb-playables] ytd-guide-entry-renderer:has(a[href*="/playables"]),
+html[data-sb-playables] ytd-mini-guide-entry-renderer:has(a[href*="/playables"]),
+html[data-sb-playables] ytd-rich-section-renderer:has(a[href*="/playables"]),
+html[data-sb-playables] ytd-rich-item-renderer:has(a[href*="/playables"]),
+html[data-sb-playables] yt-lockup-view-model:has(a[href*="/playables"]),
+html[data-sb-playables] ytm-rich-section-renderer:has(a[href*="/playables"]),
+html[data-sb-playables] ytm-rich-item-renderer:has(a[href*="/playables"]) {
+  display: none !important;
+}

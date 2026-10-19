@@ -1,11 +1,11 @@
 // Keep in sync with DEFAULTS in popup.js.
-const DEFAULTS = { enabled: true, nav: true, shelves: true, feed: true, redirect: true };
+const DEFAULTS = { enabled: true, nav: true, shelves: true, feed: true, playables: true, redirect: true };
 const root = document.documentElement;
 let settings = DEFAULTS;
 
 function apply(next) {
   settings = next;
-  for (const key of ["nav", "shelves", "feed"]) {
+  for (const key of ["nav", "shelves", "feed", "playables"]) {
     root.toggleAttribute(`data-sb-${key}`, settings.enabled && settings[key]);
   }
   redirectIfShort();

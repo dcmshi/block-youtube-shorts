@@ -7,6 +7,7 @@ A tiny Chrome extension that hides YouTube Shorts on the web. The YouTube mobile
 - Hides the Shorts entry in the sidebar and the Shorts tab on channel pages
 - Hides the Shorts shelves on home, search, subscriptions and watch pages
 - Hides single Shorts mixed in with regular videos
+- Hides Playables (YouTube's games): the sidebar entry, the home shelf and single game cards
 - Opens `/shorts/<id>` links in the normal video player
 
 Each option can be turned on or off from the toolbar popup. It works on `www.youtube.com` and `m.youtube.com`.

@@ -1,5 +1,5 @@
 // Keep in sync with DEFAULTS in content.js.
-const DEFAULTS = { enabled: true, nav: true, shelves: true, feed: true, redirect: true };
+const DEFAULTS = { enabled: true, nav: true, shelves: true, feed: true, playables: true, redirect: true };
 
 chrome.storage.sync.get(DEFAULTS, (settings) => {
   for (const [key, value] of Object.entries(settings)) {

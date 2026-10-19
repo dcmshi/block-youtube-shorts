@@ -17,6 +17,7 @@ What it hides:
 • The Shorts entry in the sidebar and the Shorts tab on channel pages
 • The Shorts shelves on the home page, search results, subscriptions and watch pages
 • Single Shorts mixed in with regular videos
+• Playables, YouTube's games: the sidebar entry, the home shelf and single game cards
 
 It also opens Shorts links in the regular video player, so a link a friend sends you still works, just without the endless scroll.
 
@@ -51,7 +52,7 @@ Not affiliated with or endorsed by YouTube or Google.
 **Single purpose description**
 
 ```
-Hides YouTube Shorts from youtube.com and opens Shorts links in the regular video player.
+Hides YouTube Shorts and Playables (YouTube's games) from youtube.com, and opens Shorts links in the regular video player.
 ```
 
 **Permission justification: storage**
@@ -63,7 +64,7 @@ Saves the user's on/off choices for each blocking option so they persist between
 **Host permission justification (www.youtube.com, m.youtube.com)**
 
 ```
-The content script must run on YouTube pages to hide Shorts elements and to redirect /shorts/ URLs to the regular /watch player. It runs on no other sites.
+The content script must run on YouTube pages to hide Shorts and Playables elements and to redirect /shorts/ URLs to the regular /watch player. It runs on no other sites.
 ```
 
 **Remote code:** No, I am not using remote code.

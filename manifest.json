@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Shorts Blocker for YouTube",
   "short_name": "Shorts Blocker",
-  "version": "1.0.0",
-  "description": "Hide YouTube Shorts everywhere: sidebar, home feed, search, subscriptions and channels. Opens Shorts links in the normal player.",
+  "version": "1.1.0",
+  "description": "Hide YouTube Shorts and Playables: sidebar, home feed, search, subscriptions and channels. Opens Shorts links in the normal player.",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
